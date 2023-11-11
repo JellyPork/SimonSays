@@ -111,7 +111,6 @@ fun MainGameComponent(
         timerRunning = true
     }
 
-    // Inside MainGameComponent
     fun resetGame() {
         currentSequence = generateRandomButton(buttonsCount, 1)
         playerInput = emptyList()
@@ -209,7 +208,7 @@ fun MainGameComponent(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(8.dp), // Adjust padding as needed
+                    .padding(8.dp),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -230,7 +229,7 @@ fun MainGameComponent(
 //        Text(text = "$playSequenceText", fontSize = 32.sp) // Adjust text color as needed
 
         Spacer(modifier = Modifier.height(16.dp))
-        // Display the buttons
+        // Display the shbuttons
         for (row in 0 until rows) {
 
             Row(

@@ -25,7 +25,6 @@ fun TopBarComponent(
             }
         },
         actions = {
-            // Add action items for other functionalities (if any)
         }
     )
 }

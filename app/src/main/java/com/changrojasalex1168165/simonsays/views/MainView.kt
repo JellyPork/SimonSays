@@ -72,14 +72,12 @@ fun MainMenuComponent(navController: NavHostController, viewModel: GameViewModel
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // "Top Scoreboards" button to navigate to the Scoreboards activity
         Button(onClick = {
             // Inside your Composable function
             val gameResults = viewModel.getGameResults().value
             Log.d("Tag for Game Results", gameResults.toString())
             
             navController.navigate("scoreboards")
-            // Use the appropriate destination in your navigation graph
         }) {
             Text(text = "Top Scoreboards")
         }
